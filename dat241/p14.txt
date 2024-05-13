@@ -1,0 +1,23 @@
+la taxonimia de flynn clasifica los sistemas informaticos 
+segun el numero de instrucciones y datos que se procesan 
+simultaneamente :
+1. SISD un solo flujo de instrucciones este procesamiento es lineal  
+2. SIMD un solo flujo de intrucciones opera en multiples flujos de datos simultaneamente 
+3. MISD multiples flujos de instrucciones operan en un solo flujo
+4. MIMD multiples flujos de instrciones que operan en varios flujos de datos simultaneamente 
+
+segun la taxonomia de flynn 
+1.OpenMp 
+es una API de programacion que ejecuta en paralelo multiples nucleos en CPU
+este sigue el modelo MIMD ya que multiples hilos ejecutan instrucciones en multiples datos compatidos
+en memoria 
+2. MPI 
+MPI utiliza comunmente en sistemas distribuidos para ejecutar tareas independientes 
+en diferentes nodos por tanto se clasifica como MIMD ya que cada nodo 
+puede ejecutar un conjunto diferente de intrucciones sobre diferentes conjuntos de datos 
+3. Multiprocessing 
+PYTHON nos proporciona una forma de crear procesos individuales cada uno con su espacio de memoria 
+para aprovechar el multiprocesamiento con multiples nucleos de CPU por tanto se clasifica 
+como MIMD 
+
+OpenMP MPI y Multiprocessing se clasifican como MIMD segun la taxonomia 
